@@ -12,6 +12,7 @@ slightly different. For one, `usethis` is aimed at populating a package structur
 Second, there is not preset full template, hence many individual decisions still
 need to be made and code executed. This is bypassed by this setup.
 
+
 ## Use
 
 ### A github project from the template
@@ -20,10 +21,15 @@ To use the template create a new repository on github, as you otherwise would
 using the big green button. If you are in the project on github you can hit
 the green button top right (Use this template).
 
-Otherwise you can select the repository from the template dropdown menu, select `bluegreen-labs/R-project-template`.
+![](https://github.com/bluegreen-labs/environmental_data_science_101/raw/main/images/green_button.png)
+
+Otherwise you can select the repository from the template dropdown menu, select `computationales/R-project-template`.
+
+![](https://github.com/bluegreen-labs/environmental_data_science_101/raw/main/images/new_repo_1.png)
 
 Proceed as usual by naming your repository. However, be careful to select the 
 correct owner of the project if you have multiple identities.
+![](https://github.com/bluegreen-labs/environmental_data_science_101/raw/main/images/new_repo_2.png)
 
 ### Clone to your local computer
 
@@ -183,7 +189,7 @@ The `manuscript` folder contains a true working document often written in an
 external word processing software. It also, at times, contain the output of 
 any analysis script, such as tables and rendered figures.
 
-These can be an R markdown file if for example suitable templates can be found in
+Thee can be an R markdown file if for example suitable templates can be found in
 the [`rticles`](https://pkgs.rstudio.com/rticles/) R package to facilitate 
 publication. However, the use of R markdown should be done with much care 
 (see notes on the `vignettes` folder). As before, use sub-folders to organize
