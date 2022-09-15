@@ -1,6 +1,6 @@
 # The BlueGreen Labs R project template
 
-This is a github template for a CES R project repository. This template can
+This is a github template for a BlueGreen Labs R project repository. This template can
 be loaded when creating a new project in github. As such you pre-populate a
 project with a standard set of directories. This ensures a project-oriented 
 and consistent workflow across all lab members, and removes some of the mental
