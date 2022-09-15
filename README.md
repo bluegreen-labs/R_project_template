@@ -23,7 +23,7 @@ the green button top right (Use this template).
 
 ![](https://github.com/bluegreen-labs/environmental_data_science_101/raw/main/images/green_button.png)
 
-Otherwise you can select the repository from the template dropdown menu, select `computationales/R-project-template`.
+Otherwise you can select the repository from the template dropdown menu, select `bluegreen-labs/R_project_template`.
 
 ![](https://github.com/bluegreen-labs/environmental_data_science_101/raw/main/images/new_repo_1.png)
 
