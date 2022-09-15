@@ -19,7 +19,7 @@ need to be made and code executed. This is bypassed by this setup.
 
 To use the template create a new repository on github, as you otherwise would
 using the big green button. If you are in the project on github you can hit
-the green button top right (Use this template).
+the green button top right (Use this template - note that the visuals are of a fork of this project but you get the gist of it).
 
 ![](https://github.com/bluegreen-labs/environmental_data_science_101/raw/main/images/green_button.png)
 
