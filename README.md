@@ -4,7 +4,9 @@ This is a github template for a BlueGreen Labs R project repository. This templa
 be loaded when creating a new project in github. As such you pre-populate a
 project with a standard set of directories. This ensures a project-oriented 
 and consistent workflow across all lab members, and removes some of the mental
-overhead in making decisions on a project structure.
+overhead in making decisions on a project structure. It further helps in ensuring
+reproducible workflows, for more details on minimum standards on reproducibility
+consult [Jenkins et al. 2023](https://onlinelibrary.wiley.com/doi/10.1002/ece3.9961).
 
 It must be noted that some of the functionality as provided by this setup is
 included in the [`usethis`](https://usethis.r-lib.org/) R package, the aim is 
