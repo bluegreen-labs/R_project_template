@@ -23,15 +23,17 @@ To use the template create a new repository on github, as you otherwise would
 using the big green button. If you are in the project on github you can hit
 the green button top right (Use this template - note that the visuals are of a fork of this project but you get the gist of it).
 
-![](https://github.com/bluegreen-labs/environmental_data_science_101/raw/main/images/green_button.png)
+![Screenshot from 2023-06-08 11-33-14](https://github.com/bluegreen-labs/R_project_template/assets/1354258/bf1b479a-6d74-4df2-93cf-abfabd01b950)
+
 
 Otherwise you can select the repository from the template dropdown menu, select `bluegreen-labs/R_project_template`.
 
-![](https://github.com/bluegreen-labs/environmental_data_science_101/raw/main/images/new_repo_1.png)
+![Screenshot from 2023-06-08 11-34-33](https://github.com/bluegreen-labs/R_project_template/assets/1354258/f471817f-5829-49e2-b6db-53be07cf0740)
 
 Proceed as usual by naming your repository. However, be careful to select the 
 correct owner of the project if you have multiple identities.
-![](https://github.com/bluegreen-labs/environmental_data_science_101/raw/main/images/new_repo_2.png)
+
+![Screenshot from 2023-06-08 11-33-36](https://github.com/bluegreen-labs/R_project_template/assets/1354258/ed95b964-393d-459a-9c2c-5cd6265fb2f9)
 
 ### Clone to your local computer
 
