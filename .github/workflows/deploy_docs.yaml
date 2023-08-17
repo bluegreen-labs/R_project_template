@@ -11,6 +11,11 @@ on:
 
 name: pkgdown
 
+# set write permissions
+# to create gh-pages
+permissions:
+  contents: write
+
 jobs:
   pkgdown:
     runs-on: Ubuntu-latest
