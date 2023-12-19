@@ -3,6 +3,8 @@
 ^_pkgdown\.yml$
 ^pkgdown$
 ^docs$
+^analysis$
+^manuscript$
 ^data-raw$
 ^vignettes_add$
 
