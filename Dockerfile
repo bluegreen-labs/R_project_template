@@ -1,0 +1,29 @@
+FROM rocker/cuda:4.3.1
+
+LABEL org.opencontainers.image.licenses="GPL-2.0-or-later" \
+      org.opencontainers.image.source="https://github.com/rocker-org/rocker-versioned2" \
+      org.opencontainers.image.vendor="Rocker Project" \
+      org.opencontainers.image.authors="Carl Boettiger <cboettig@ropensci.org>"
+
+ENV S6_VERSION=v2.1.0.2
+ENV RSTUDIO_VERSION=2023.09.0+463
+ENV DEFAULT_USER=rstudio
+ENV PANDOC_VERSION=default
+ENV QUARTO_VERSION=default
+
+RUN /rocker_scripts/install_rstudio.sh
+RUN /rocker_scripts/install_pandoc.sh
+RUN /rocker_scripts/install_quarto.sh
+RUN /rocker_scripts/install_tidyverse.sh
+
+RUN apt update && apt install -y libprotobuf-dev libmagick++-dev libavfilter-dev
+
+RUN R -e "install.packages( \
+      c('torch', 'luz', 'torchvision', 'torchaudio','rsample'), \
+      dependencies = TRUE, \
+      repos='http://cran.rstudio.com/')"
+RUN R -e "Sys.setenv(CUDA='11.7'); torch::install_torch(); quit('no')"
+
+EXPOSE 8787
+
+CMD ["/init"]
