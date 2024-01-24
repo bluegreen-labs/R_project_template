@@ -14,7 +14,7 @@ slightly different. For one, `usethis` is aimed at populating a package structur
 Second, there is no preset full template, hence many individual decisions still
 need to be made and code executed. This is bypassed by this setup.
 
-> NOTE: The template uses BlueGreen Labs' default package template. BlueGreen Labs
+> DISCLAIMER: The template uses BlueGreen Labs' default package template. BlueGreen Labs
 > does not take responsibility or endorses projects (accidentally) using BlueGreen Labs branding.
 > Please remove branding by removing the 'package' line in the _pkgdown.yml file.
 
