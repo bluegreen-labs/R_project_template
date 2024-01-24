@@ -11,7 +11,7 @@ consult [Jenkins et al. 2023](https://onlinelibrary.wiley.com/doi/10.1002/ece3.9
 It must be noted that some of the functionality as provided by this setup is
 included in the [`usethis`](https://usethis.r-lib.org/) R package, the aim is 
 slightly different. For one, `usethis` is aimed at populating a package structure.
-Second, there is not preset full template, hence many individual decisions still
+Second, there is no preset full template, hence many individual decisions still
 need to be made and code executed. This is bypassed by this setup.
 
 > NOTE: The template uses BlueGreen Labs' default package template. BlueGreen Labs
