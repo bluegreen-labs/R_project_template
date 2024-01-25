@@ -235,3 +235,33 @@ code blocks which should be functions are not translated as such.
 In short, R markdown files have their function in reporting results, once
 generated (through functions or analysis scripts) but should be avoided to
 develop code / ideas (see cognitive switching remark)!
+
+## Docker images
+
+The dockerfile included provides a (GPU) torch setup. You can build this docker
+image using the below command. This will download the NVIDIA CUDA drivers for 
+GPU support, the tidyverse, rstudio IDE and quarto publishing environment. 
+Note that this setup will require some time to build given the the large 
+downloads involved. Once build locally no further downloads will be required.
+
+```
+# In the main project directory run
+docker build -f Dockerfile_torch -t rocker-torch .
+```
+
+To spin up a GPU docker image use **in the project directory**:
+
+```
+docker run --gpus all -e PASSWORD="rstudio" -p 5656:8787 -v $(pwd):/workspace rocker-torch
+```
+
+In any browser use the [http://localhost:5656](http://localhost:5656) url to access 
+the docker RStudio Server instance which should be running.
+
+The password to the RStudio Server instance is set to `rstudio` when using the above 
+commands (but can and should be changed if the computer is exposed to a larger
+institutional network). This is not a secured setup, use a stronger password or
+a local firewall to avoid abuse.
+
+Data will be mounted in the docker virtual machine at `/workspace` and is fully
+accessible (writing and reading of files on your local file system).
