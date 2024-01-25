@@ -195,6 +195,18 @@
 <p>In short, R markdown files have their function in reporting results, once generated (through functions or analysis scripts) but should be avoided to develop code / ideas (see cognitive switching remark)!</p>
 </div>
 </div>
+<div class="section level2">
+<h2 id="docker-images">Docker images<a class="anchor" aria-label="anchor" href="#docker-images"></a>
+</h2>
+<p>The dockerfile included provides a (GPU) torch setup. You can build this docker image using the below command. This will download the NVIDIA CUDA drivers for GPU support, the tidyverse, rstudio IDE and quarto publishing environment. Note that this setup will require some time to build given the the large downloads involved. Once build locally no further downloads will be required.</p>
+<pre><code># In the main project directory run
+docker build -f Dockerfile_torch -t rocker-torch .</code></pre>
+<p>To spin up a GPU docker image use <strong>in the project directory</strong>:</p>
+<pre><code>docker run --gpus all -e PASSWORD="rstudio" -p 5656:8787 -v $(pwd):/workspace rocker-torch</code></pre>
+<p>In any browser use the <a href="http://localhost:5656" class="external-link">http://localhost:5656</a> url to access the docker RStudio Server instance which should be running.</p>
+<p>The password to the RStudio Server instance is set to <code>rstudio</code> when using the above commands (but can and should be changed if the computer is exposed to a larger institutional network). This is not a secured setup, use a stronger password or a local firewall to avoid abuse.</p>
+<p>Data will be mounted in the docker virtual machine at <code>/workspace</code> and is fully accessible (writing and reading of files on your local file system).</p>
+</div>
 </div>
   </div>
 
