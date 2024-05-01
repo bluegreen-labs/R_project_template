@@ -129,7 +129,9 @@ data-raw/
 
 Where possible it is good practice to store output data (in `data`) either as human 
 readable CSV files, or as R serialized files 
-(generated using with the `saveRDS()` function).
+(i.e. *.rds files generated using with the `saveRDS()` function). The latter is however prone to a
+[severe security issue](https://hiddenlayer.com/research/r-bitrary-code-execution/), which is
+currently unresolved. As such, only personally generated rds/rda/RData files should be trusted!
 
 It is common that raw data is large in size, which limits the option of storing
 the data in a git repository. If this isn't possible this data can be excluded
