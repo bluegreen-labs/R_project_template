@@ -83,16 +83,16 @@
 <h3 id="a-github-project-from-the-template">A github project from the template<a class="anchor" aria-label="anchor" href="#a-github-project-from-the-template"></a>
 </h3>
 <p>To use the template create a new repository on github, as you otherwise would using the big green button. If you are in the project on github you can hit the green button top right (Use this template - note that the visuals are of a fork of this project but you get the gist of it).</p>
-<div class="figure">
-<img src="https://github.com/bluegreen-labs/R_project_template/assets/1354258/bf1b479a-6d74-4df2-93cf-abfabd01b950" alt=""><p class="caption">Screenshot from 2023-06-08 11-33-14</p>
+<div class="float">
+<img src="https://github.com/bluegreen-labs/R_project_template/assets/1354258/bf1b479a-6d74-4df2-93cf-abfabd01b950" alt="Screenshot from 2023-06-08 11-33-14"><div class="figcaption">Screenshot from 2023-06-08 11-33-14</div>
 </div>
 <p>Otherwise you can select the repository from the template dropdown menu, select <code>bluegreen-labs/R_project_template</code>.</p>
-<div class="figure">
-<img src="https://github.com/bluegreen-labs/R_project_template/assets/1354258/f471817f-5829-49e2-b6db-53be07cf0740" alt=""><p class="caption">Screenshot from 2023-06-08 11-34-33</p>
+<div class="float">
+<img src="https://github.com/bluegreen-labs/R_project_template/assets/1354258/f471817f-5829-49e2-b6db-53be07cf0740" alt="Screenshot from 2023-06-08 11-34-33"><div class="figcaption">Screenshot from 2023-06-08 11-34-33</div>
 </div>
 <p>Proceed as usual by naming your repository. However, be careful to select the correct owner of the project if you have multiple identities.</p>
-<div class="figure">
-<img src="https://github.com/bluegreen-labs/R_project_template/assets/1354258/ed95b964-393d-459a-9c2c-5cd6265fb2f9" alt=""><p class="caption">Screenshot from 2023-06-08 11-33-36</p>
+<div class="float">
+<img src="https://github.com/bluegreen-labs/R_project_template/assets/1354258/ed95b964-393d-459a-9c2c-5cd6265fb2f9" alt="Screenshot from 2023-06-08 11-33-36"><div class="figcaption">Screenshot from 2023-06-08 11-33-36</div>
 </div>
 </div>
 <div class="section level3">
@@ -100,7 +100,7 @@
 </h3>
 <p>The new repository will be created and populated with the files of the template. You can then clone the project to your local computer to add files.</p>
 <p>Although optional it is wise to rename the <code>*.Proj</code> file as this will not automatically change to your repository name. However, retaining the original name should not change any of the functionality.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone git@github.com:USER/YOUR_PROJECT.git</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">git</span> clone git@github.com:USER/YOUR_PROJECT.git</span></code></pre></div>
 </div>
 </div>
 <div class="section level2">
@@ -152,7 +152,7 @@
 ├─ raw_data_product/
 ├─ 00_download_raw_data.R
 ├─ 01_process_raw_data.R</code></pre>
-<p>Where possible it is good practice to store output data (in <code>data</code>) either as human readable CSV files, or as R serialized files (generated using with the <code><a href="https://rdrr.io/r/base/readRDS.html" class="external-link">saveRDS()</a></code> function).</p>
+<p>Where possible it is good practice to store output data (in <code>data</code>) either as human readable CSV files, or as R serialized files (i.e. *.rds files generated using with the <code><a href="https://rdrr.io/r/base/readRDS.html" class="external-link">saveRDS()</a></code> function). The latter is however prone to a <a href="https://hiddenlayer.com/research/r-bitrary-code-execution/" class="external-link">severe security issue</a>, which is currently unresolved. As such, only personally generated rds/rda/RData files should be trusted!</p>
 <p>It is common that raw data is large in size, which limits the option of storing the data in a git repository. If this isn’t possible this data can be excluded from the git repository by explicitly adding directories to <code>.gitignore</code> to avoid accidentally adding them.</p>
 <p>When dealing with heterogeneous systems dynamic paths can be set to (soft) link to raw-data outside the project directory.</p>
 </div>
