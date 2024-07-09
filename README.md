@@ -267,3 +267,11 @@ a local firewall to avoid abuse.
 
 Data will be mounted in the docker virtual machine at `/workspace` and is fully
 accessible (writing and reading of files on your local file system).
+
+## Loading packages
+
+You can use precompiled binaries for your system to save time (especially on linux
+where the default is to compile from source). You can use the RStudio/Posit archive
+to find your OS.
+
+[https://packagemanager.posit.co/client/#/repos/cran/setup](https://packagemanager.posit.co/client/#/repos/cran/setup)
