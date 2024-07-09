@@ -24,7 +24,7 @@
 <!-- Mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" async integrity="sha256-nlrDrBTHxJJlDDX22AS33xYI1OJHnGMDhiYMSe2U0e0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/config/TeX-AMS-MML_HTMLorMML.js" async integrity="sha256-4zys9A4hMQmtq2EUL+JRoXc0NZi8jVJMzb8onewOaSQ=" crossorigin="anonymous"></script>
 </head>
 <body data-spy="scroll" data-target="#toc">
-    
+
 
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -55,7 +55,7 @@
 <li>
   <a href="reference/index.html">Reference</a>
 </li>
-        
+
       </ul>
 </div>
 <!--/.nav-collapse -->
@@ -64,7 +64,7 @@
 </div>
 <!--/.navbar -->
 
-      
+
 
       </header><div class="row">
   <div class="contents col-md-9">
@@ -207,6 +207,12 @@ docker build -f Dockerfile_torch -t rocker-torch .</code></pre>
 <p>The password to the RStudio Server instance is set to <code>rstudio</code> when using the above commands (but can and should be changed if the computer is exposed to a larger institutional network). This is not a secured setup, use a stronger password or a local firewall to avoid abuse.</p>
 <p>Data will be mounted in the docker virtual machine at <code>/workspace</code> and is fully accessible (writing and reading of files on your local file system).</p>
 </div>
+<div class="section level2">
+<h2 id="loading-packages">Loading packages<a class="anchor" aria-label="anchor" href="#loading-packages"></a>
+</h2>
+<p>You can use precompiled binaries for your system to save time (especially on linux where the default is to compile from source). You can use the RStudio/Posit archive to find your OS.</p>
+<p><a href="https://packagemanager.posit.co/client/#/repos/cran/setup" class="external-link">https://packagemanager.posit.co/client/#/repos/cran/setup</a></p>
+</div>
 </div>
   </div>
 
@@ -281,10 +287,10 @@ docker build -f Dockerfile_torch -t rocker-torch .</code></pre>
       </footer>
 </div>
 
-  
 
 
-  
+
+
 
   </body>
 </html>
